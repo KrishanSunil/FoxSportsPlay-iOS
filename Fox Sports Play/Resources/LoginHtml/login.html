@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fox Sports</title>
+<script type="text/javascript" src="https://sp.tbxnet.com/001/fpa/auth.js"></script>
+<script type="text/javascript">
+    
+ 
+ var globalCountyCde;
+function logout() {
+    TBX.logout(function(status){
+        document.getElementById("idp_list").innerHTML = JSON.stringify(status);
+    });
+}
+
+function call(){
+    var url = 'ValidateCountry#';
+    window.location.href= url;
+}
+
+
+
+function getReturnUrl(){
+
+        var url = document.URL;
+
+   
+    var string1 = "https://sp.tbxnet.com/v2/auth/fpa/login.html?return="
+    var idp = "&idp=prensafpa"
+   
+    var string = string1.concat("http://foxsportsplay.com");
+
+
+    
+
+    return string.concat(idp);
+
+
+}
+
+function callAndroidInterFace(){
+
+Android.loadPressPass();
+
+
+}
+
+function setGlobalCountyCode(test){
+
+    globalCountyCde = test;
+
+    
+    tbfxInit();
+   
+}
+
+function isCountrySame(countryCode){
+
+
+    if(countryCode.toLowerCase()==globalCountyCde.toLowerCase()){
+        return true;
+    }
+    return false;
+}
+
+function ValidateCountry(countryCode){
+    
+    
+//    var url = 'ValidateCountry#';
+//    window.location.href= url;
+//    
+//    if(countryCode.toLowerCase()=='my'){
+//        return true;
+//    }
+
+    return isCountrySame(countryCode);
+    
+    
+}
+
+function tbfxInit(){
+    
+    TBX.init(function() {
+         
+             TBX.getLoginStatus(
+                                
+                                function(status) {
+                                
+                                if (status['status']) { // true, session still valid
+                                
+                                toolbox.loginStatus(status['user_token']);
+                                
+                                } else { // false, session invalid, fetch from Toolbox
+                                // If the status is not valid, trigger Android src to display HTML
+                                
+                                //                    Android.displayLoginHTML();
+                              
+                                var countries = TBX.getCountries();
+                                
+                                
+                                var content = document.getElementById("idp_list");
+                                for (var countryCode in countries) {
+                             
+                                if (ValidateCountry(countryCode)) {
+                                var idps = TBX.getIDPs(countryCode);
+                                if (idps != null && idps.length > 0) {
+                                for (var i = 0; i < idps.length; i++) {
+                                var idpShortName = idps[i].shortName;
+                              
+                                var idpName = idps[i].description;
+                                var idpLogo = TBX.getLogoIDP(idpShortName);
+                                
+                                var idpLogoImg = document.createElement("img");
+                                idpLogoImg.className = "idp_logo";
+                                idpLogoImg.src = idpLogo;
+                                
+                                var idpLink = document.createElement("a");
+                                idpLink.appendChild(idpLogoImg);
+                                idpLink.href = TBX.getLoginURL(idpShortName, 'http://www.accccedddo.tv', countryCode);
+                                idpLink.appendChild(idpLogoImg);
+                                
+                                var idpNameDiv = document.createElement("div");
+                                idpNameDiv.className = "idp_name";
+                                idpNameDiv.innerHTML = idpName;
+                                
+                                var idpItem = document.createElement("div");
+                                idpItem.className = "idp_item";
+                                
+                                var idpLogoDiv = document.createElement("div");
+                                idpLogoDiv.appendChild(idpLink);
+                                idpItem.appendChild(idpLogoDiv);
+                                idpItem.appendChild(idpNameDiv);
+                                content.appendChild(idpItem);
+                                
+//                                Android.displayIDP(idpName, idpLink.href);
+                                }
+                                }
+                                }
+                                }
+                                }
+                                }
+                                );
+             });
+
+}
+
+
+function init() {
+
+    var a = document.getElementById('press_pass')
+    a.href = getReturnUrl();
+
+call();
+}
+
+function buildIDPItem(idp)  {
+    var idpShortName = idp.shortName;
+  
+    var idpName = idp.description;
+    var idpLogo = TBX.getLogoIDP(idpShortName)
+
+    var idpLogoImg = document.createElement("img");
+    idpLogoImg.src = idpLogo;
+    var idpLink = document.createElement("a");
+    idpLink.appendChild(idpLogoImg);
+    idpLink.href = TBX.getLoginURL(idpShortName, 'http://www.accccedddo.tv', countryCode);
+
+    var idpNameDiv = document.createElement("div");
+    idpNameDiv.innerHTML = idpName;
+    return idpLink;
+}
+
+</script>
+<style type="text/css">
+    body {
+        background-color: #353535;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+
+    #content {
+
+    }
+
+    #content_header {
+        border-bottom: medium solid #5FC3E9;
+        font-size: 21px;
+    }
+
+    #content_body {
+        padding: 5%;
+        color: #C9C9C9;
+        font-size: 20px;
+    }
+
+    .title {
+        color: #5FC3E9;
+        padding: 5%;
+    }
+
+    .idp_name {
+        text-align: center;
+    }
+
+    .idp_logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .idp_item {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        float: left;
+    }
+   
+    #press_pass{
+        padding: 5%;
+        color: #C9C9C9;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body onload="init()">
+    <div id="content">
+        <div id="content_header">
+            <div class="title">Login</div>
+        </div>
+        <div id="content_body">
+            <div>
+                <strong>Welcome to FOX SPORTS PLAY.</strong><br/><br/>
+                Please choose your service provider.
+            </div>
+            <br/>
+            <div>
+                <div id="indicator"></div>
+                <div id="idp_list"></div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div  >
+    <a id="press_pass">Press Pass</a>
+    </div>
+    <div id="countryCode" style="visibility:hidden">
+    </div>
+</body>
+</html>

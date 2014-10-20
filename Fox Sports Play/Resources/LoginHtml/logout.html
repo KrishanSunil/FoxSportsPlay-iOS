@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Fox Sports</title>
+            <script type="text/javascript" src="https://sp.tbxnet.com/001/fpa/auth.js"></script>
+            <script type="text/javascript">
+                
+                function callLogout(status){
+                    var url = 'logoutStatus#'+status;
+                    window.location.href= url;
+                }
+                
+                function logout() {
+                    TBX.init(function() {
+                             TBX.logout(function(status){
+                                        callLogout(JSON.stringify(status));
+                                        });
+                             });
+                }
+            </script>
+            <style type="text/css">
+                body {
+                    background-color: #353535;
+                    margin: 0;
+                    padding: 0;
+                    width: auto;
+                    height: auto;
+                }
+            
+            #content_header {
+                border-bottom: medium solid #5FC3E9;
+                font-size: 21px;
+            }
+            
+            #content_body {
+                padding: 5%;
+                color: #C9C9C9;
+                font-size: 20px;
+                margin-top: 1%;
+            }
+            
+                </style>
+    </head>
+    <body>
+        <div id="content">
+            <div id="content_body">
+                Logging out...
+            </div>
+        </div>
+        <script type="text/javascript">
+            logout();
+            </script>
+    </body>
+</html>

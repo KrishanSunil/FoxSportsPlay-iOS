@@ -1,0 +1,91 @@
+// !$*UTF8*$!
+{
+	A2600E89197E4E7600CE0D2A /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A29609F519AC5C1500DF52D0 /* Fox Sports Play */;
+		activeTarget = A2600E90197E4E7600CE0D2A /* Fox Sports Play */;
+		codeSenseManager = A2960A0D19AC5C2F00DF52D0 /* Code sense */;
+		executables = (
+			A29609F519AC5C1500DF52D0 /* Fox Sports Play */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 433999237;
+			PBXWorkspaceStateSaveDate = 433999237;
+		};
+		sourceControlManager = A2960A0C19AC5C2F00DF52D0 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A2600E90197E4E7600CE0D2A /* Fox Sports Play */ = {
+		activeExec = 0;
+		executables = (
+			A29609F519AC5C1500DF52D0 /* Fox Sports Play */,
+		);
+	};
+	A2600EB0197E4E7600CE0D2A /* Fox Sports PlayTests */ = {
+		activeExec = 0;
+	};
+	A29609F519AC5C1500DF52D0 /* Fox Sports Play */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Fox Sports Play";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A2960A0C19AC5C2F00DF52D0 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A2960A0D19AC5C2F00DF52D0 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

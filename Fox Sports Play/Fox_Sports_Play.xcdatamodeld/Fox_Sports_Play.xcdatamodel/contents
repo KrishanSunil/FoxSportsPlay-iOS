@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Categories" representedClassName="Categories" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheme" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="entriesRelationShip" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Entries" inverseName="categoriesRelationship" inverseEntity="Entries" syncable="YES"/>
+    </entity>
+    <entity name="Content" representedClassName="Content" syncable="YES">
+        <attribute name="audioSampleRate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="audoChannels" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="bitrate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="checksums" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="contentType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayAspectRatio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="expression" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filesize" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="format" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="framRate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceTime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="entriesRelationShip" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Entries" inverseName="contentRelationship" inverseEntity="Entries" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES">
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Entries" representedClassName="Entries" syncable="YES">
+        <attribute name="availableDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="defaultThumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entrydescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expirationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="livevodupcoming" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categoriesRelationship" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Categories" inverseName="entriesRelationShip" inverseEntity="Categories" syncable="YES"/>
+        <relationship name="contentRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Content" inverseName="entriesRelationShip" inverseEntity="Content" syncable="YES"/>
+        <relationship name="thumbnailsRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Thumbnails" inverseName="entriesRelationShip" inverseEntity="Thumbnails" syncable="YES"/>
+    </entity>
+    <entity name="HighLights" representedClassName="HighLights" syncable="YES">
+        <attribute name="entryCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="itemsPerPage" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="startIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalResults" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="entriesRelationShip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entries" syncable="YES"/>
+    </entity>
+    <entity name="Languages" representedClassName="Languages" syncable="YES">
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="subLanguageRelationShip" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SubLanguages" syncable="YES"/>
+    </entity>
+    <entity name="SubLanguages" representedClassName="SubLanguages" syncable="YES">
+        <attribute name="defaultNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="feed_carousel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feed_live" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feed_upcoming" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="languageCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="textRelationShip" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Texts" syncable="YES"/>
+    </entity>
+    <entity name="Texts" representedClassName="Texts" syncable="YES">
+        <attribute name="txt_all_sports" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_cancel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_dialog_language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_exit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_exit_due_to_geo_block" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_exit_due_to_network" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_live_not_ready" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_logging_out" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_menu_help" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_menu_home" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_menu_language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_menu_live" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_menu_login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_menu_logout" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_menu_sports_vod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_menu_t_and_c" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_network_problem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_no_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_ok" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_other_videos" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_retry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_stop" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_url_missing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_url_problem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_video_advertisement_loading" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_video_advertisement_second" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="txt_video_advertisement_seconds" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Thumbnails" representedClassName="Thumbnails" syncable="YES">
+        <attribute name="audioSampleRate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="audoChannels" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="bitrate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="checksums" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="contentType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayAspectRatio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="expression" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filesize" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="format" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="framRate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceTime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="entriesRelationShip" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Entries" inverseName="thumbnailsRelationship" inverseEntity="Entries" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Categories" positionX="-36" positionY="54" width="128" height="135"/>
+        <element name="Content" positionX="-9" positionY="81" width="128" height="313"/>
+        <element name="Country" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Entries" positionX="-54" positionY="27" width="128" height="195"/>
+        <element name="HighLights" positionX="-63" positionY="0" width="128" height="118"/>
+        <element name="Languages" positionX="-27" positionY="135" width="128" height="88"/>
+        <element name="SubLanguages" positionX="-18" positionY="144" width="128" height="148"/>
+        <element name="Texts" positionX="-9" positionY="153" width="128" height="448"/>
+        <element name="Thumbnails" positionX="9" positionY="180" width="128" height="313"/>
+    </elements>
+</model>
