@@ -277,6 +277,20 @@
     
     [backGroundProcess getHighlights:^(NSMutableDictionary* responseDictionary){
         
+        if ([[responseDictionary objectForKey:@"responseCode"] intValue]==400) {
+            [self showAlertViewWithTag:GeoBlocked title:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"Geo_Block_Error", nil)];
+            
+            return ;
+        }
+        
+        NSMutableArray *entriesArray  = [responseDictionary objectForKey:@"entries"];
+        
+//        if (entriesArray.count==0||!entriesArray) {
+//            [self showAlertViewWithTag:InternetNonRechable title:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"Geo_Block_Error", nil)];
+//            
+//            return ;
+//        }
+        
         FICAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
         
         FICEntriesDataAccess *entriesDataAccess = [[FICEntriesDataAccess alloc]initWithManagedObjectContext:appDelegate.persistentStack.managedObjectContext];
@@ -288,7 +302,7 @@
         
         
 
-        NSMutableArray *entriesArray  = [responseDictionary objectForKey:@"entries"];
+        
         
         BOOL isSaved = false;
         
@@ -309,7 +323,6 @@
                 [self downloadLiveData:isSplash];
                 break;
             case UPCOMING:
-
                 [self startHomeView];
                 break;
             case LIVE:

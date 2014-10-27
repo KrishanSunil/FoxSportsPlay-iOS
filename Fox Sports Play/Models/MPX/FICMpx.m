@@ -23,6 +23,8 @@
 //Get VOD Feed Url
 +(NSString*)getHighlightsFeed:(NSString*)url minRange:(int)minRange maxRange:(int)maxRange countryCode:(NSString*)countryCode {
     
+  
+    
     NSString *highlightsFeedUrl = nil;
     NSString *urlWithRange = [NSString stringWithFormat:FOX_HIGHLIGHTS_FEED,minRange,maxRange];
     if ([url length]>0 && ![url isKindOfClass:[NSNull class]]) {

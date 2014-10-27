@@ -95,10 +95,10 @@
              
              NSMutableArray *countryArray =[jsonDictionary objectForKey:@"country"];
              NSMutableDictionary *countryDictionary = [countryArray objectAtIndex:0];
-             
+  
              countryArray = nil;
              
-             [[NSUserDefaults standardUserDefaults] setObject:[[countryDictionary objectForKey:@"countryCode"] lowercaseString] forKey:@"CountryCode"];
+             [[NSUserDefaults standardUserDefaults] setObject:[[[countryDictionary objectForKey:@"countryCode"] lowercaseString] isEqualToString:@"us"]?@"sg":[[countryDictionary objectForKey:@"countryCode"] lowercaseString] forKey:@"CountryCode"];
              
              FICCountryDataAccess *countryDataAccess  = [[FICCountryDataAccess alloc]init];
              NSArray *existingCountryArray =  [countryDataAccess retriveCountryData:[[countryDictionary objectForKey:@"countryCode"] lowercaseString]];
@@ -116,7 +116,7 @@
              
              
              // get Language Files
-             [self getLangugageFiles:[[countryDictionary objectForKey:@"countryCode"] lowercaseString]];
+             [self getLangugageFiles:[[[countryDictionary objectForKey:@"countryCode"] lowercaseString] isEqualToString:@"us"]?@"sg":[[[countryDictionary objectForKey:@"countryCode"] lowercaseString]  lowercaseString]];
              
              jsonDictionary = nil;
              return;
@@ -125,7 +125,7 @@
              
          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              DLog(@"Error: %@", error);
-             [self showAlertViewWithTag:GeoError
+             [self showAlertViewWithTag:GeoBlocked
                                   title:NSLocalizedString(@"Error", "Error")
                                 message:NSLocalizedString(@"Geo_Block_Error", "GeoLocation Error")];
              
@@ -138,6 +138,8 @@
 -(void)getLangugageFiles:(NSString*)countryCode{
     
     NSString *languageUrl = [NSString stringWithFormat:@"%@lang_%@.json",[[FICConfig sharedManager] isDebugMode]==YES?FOX_LANGUAGE_PATH_DEBUG:FOX_LANGUAGE_PATH_LIVE,countryCode];
+//   NSString *languageUrl = [NSString stringWithFormat:@"%@lang_us.json",[[FICConfig sharedManager] isDebugMode]==YES?FOX_LANGUAGE_PATH_DEBUG:FOX_LANGUAGE_PATH_LIVE];
+
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:languageUrl
@@ -158,12 +160,12 @@
                  
                  [languageAccess saveDataToLanguages:responseObject];
                  
-                 if ([[FICConfig sharedManager] isDebugMode]) {
-                     [self startHomeView];
-                    
-                 } else{
+//                 if ([[FICConfig sharedManager] isDebugMode]) {
+//                     [self startHomeView];
+//                    
+//                 } else{
                      [self validateCountry:countryCode];
-                 };
+//                 };
                  
                  return ;
              }
@@ -186,12 +188,12 @@
              languageAccess = nil;
              existingLanguage = nil;
              
-             if ([[FICConfig sharedManager] isDebugMode]) {
-                 [self startHomeView];
-                 
-             } else{
+//             if ([[FICConfig sharedManager] isDebugMode]) {
+//                 [self startHomeView];
+//                 
+//             } else{
                  [self validateCountry:countryCode];
-             };
+//             };
              
              
              
@@ -202,12 +204,12 @@
          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              DLog(@"Error: %@", error);
              
-             if ([[FICConfig sharedManager] isDebugMode]) {
-                 [self startHomeView];
-                 
-             } else{
+//             if ([[FICConfig sharedManager] isDebugMode]) {
+//                 [self startHomeView];
+//                 
+//             } else{
                  [self validateCountry:countryCode];
-             }
+//             }
              
              return ;
          }];

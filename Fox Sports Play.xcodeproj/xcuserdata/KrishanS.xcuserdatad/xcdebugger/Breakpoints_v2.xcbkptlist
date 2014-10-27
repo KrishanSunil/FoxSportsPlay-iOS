@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435128758.895646"
+            timestampString = "436072307.896688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "376"
-            endingLineNumber = "376"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
             landmarkName = "-processData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435128758.895646"
+            timestampString = "436072307.896688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
-            landmarkName = "-processData:"
+            startingLineNumber = "360"
+            endingLineNumber = "360"
+            landmarkName = "-updateHomeUI"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435128758.895646"
+            timestampString = "436072307.896688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "274"
-            endingLineNumber = "274"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
             landmarkName = "-validateCountry"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435128758.895646"
+            timestampString = "436072307.896688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
             landmarkName = "-validateCountry"
             landmarkType = "5">
             <Locations>
@@ -520,11 +520,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/ParentViewController/FICParentViewController.m"
-            timestampString = "435125377.628443"
+            timestampString = "436071092.9591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "497"
-            endingLineNumber = "497"
+            startingLineNumber = "505"
+            endingLineNumber = "505"
             landmarkName = "-pushViedeoView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -536,12 +536,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/ParentViewController/FICParentViewController.m"
-            timestampString = "435125377.628443"
+            timestampString = "436071092.9591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "525"
-            endingLineNumber = "525"
-            landmarkName = "-playVideo:"
+            startingLineNumber = "533"
+            endingLineNumber = "533"
+            landmarkName = "-doInBackgroud:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -616,11 +616,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435209834.532152"
+            timestampString = "436072307.896688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "849"
-            endingLineNumber = "849"
+            startingLineNumber = "868"
+            endingLineNumber = "868"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -632,11 +632,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435209834.532152"
+            timestampString = "436072307.896688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "872"
-            endingLineNumber = "872"
+            startingLineNumber = "891"
+            endingLineNumber = "891"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -648,11 +648,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435209834.532152"
+            timestampString = "436072307.896688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1037"
-            endingLineNumber = "1037"
+            startingLineNumber = "1056"
+            endingLineNumber = "1056"
+            landmarkName = "-controllerDidChangeContent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
+            timestampString = "436072307.896688"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1066"
+            endingLineNumber = "1066"
             landmarkName = "-loginSuccess"
             landmarkType = "5">
          </BreakpointContent>
@@ -664,27 +680,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435209834.532152"
+            timestampString = "436072307.896688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1047"
-            endingLineNumber = "1047"
-            landmarkName = "-loginSuccess"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "435209834.532152"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1062"
-            endingLineNumber = "1062"
+            startingLineNumber = "1081"
+            endingLineNumber = "1081"
             landmarkName = "-loginSuccess"
             landmarkType = "5">
          </BreakpointContent>

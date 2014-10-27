@@ -126,12 +126,18 @@
 }
 
 
-
-
 -(void)loadData{
     FICAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     FICEntriesDataAccess *entriesDataAccess = [[FICEntriesDataAccess alloc]init];
     self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
+    
+//    if (!self.vod_Array||self.vod_Array.count==0) {
+//        [self showAlertViewWithTag:GeoBlocked
+//                             title:NSLocalizedString(@"Error", "Error")
+//                           message:NSLocalizedString(@"Geo_Block_Error", "GeoLocation Error")];
+//        
+//        return ;
+//    }
     
     [self performSelectorOnMainThread:@selector(setupScrollingView) withObject:nil waitUntilDone:YES];
     
@@ -144,6 +150,9 @@
     
     if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad) {
         
+        if (self.vod_Array.count==0||!self.vod_Array) {
+            return;
+        }
         Entries *lastEntries = self.vod_Array.lastObject;
         
         [self.videosImageView sd_setImageWithURL:[NSURL URLWithString:lastEntries.defaultThumbnailUrl] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
@@ -418,6 +427,10 @@
 
 -(NSMutableArray*)loadScrollViewData{
     
+    if (self.vod_Array.count==0||!self.vod_Array) {
+        return [[NSMutableArray alloc]init];
+    }
+    
     NSMutableArray *array = [NSMutableArray arrayWithArray:self.vod_Array];//[NSMutableArray alloc]initwit];
     [array removeLastObject];
     [array insertObject:self.vod_Array[self.vod_Array.count-2] atIndex:0];
@@ -431,6 +444,14 @@
 -(void)setupScrollingView{
     
    NSMutableArray *scrollViewData = [self loadScrollViewData];
+    
+    if (scrollViewData==nil||!scrollViewData||scrollViewData.count==0) {
+        [self performSelectorOnMainThread:@selector(setupLiveUpcomingTableView) withObject:nil waitUntilDone:YES];// setupLiveUpcomingTableView
+        [self.loadingActivityIndicator stopAnimating];
+        
+        isProcessing = NO;
+        return;
+    }
     self.pagingController.numberOfPages = scrollViewData.count-2;
     
     for (int i=0; i<scrollViewData.count; i++) {
@@ -490,6 +511,10 @@
 #pragma mark - ImageView Tapped Method
 
 - (void)btnTapped:(id)sender {
+    
+    if (!self.vod_Array||self.vod_Array.count==0) {
+        return;
+    }
    
     UIButton *buttonTapped = sender;
     DLog(@"Tagged index : %li", (long)buttonTapped.tag);
