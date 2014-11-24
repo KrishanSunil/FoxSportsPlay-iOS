@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/SplashViewController/FICSplashViewController.m"
-            timestampString = "433317510.442155"
+            timestampString = "437296199.822499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "-getLangugageFiles:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/SplashViewController/FICSplashViewController.m"
-            timestampString = "433317510.442155"
+            timestampString = "437296199.822499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "-getLangugageFiles:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437371559.993353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "379"
-            endingLineNumber = "379"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
             landmarkName = "-processData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437371559.993353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "360"
-            endingLineNumber = "360"
+            startingLineNumber = "363"
+            endingLineNumber = "363"
             landmarkName = "-updateHomeUI"
             landmarkType = "5">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437371559.993353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "277"
-            endingLineNumber = "277"
+            startingLineNumber = "280"
+            endingLineNumber = "280"
             landmarkName = "-validateCountry"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437371559.993353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
             landmarkName = "-validateCountry"
             landmarkType = "5">
             <Locations>
@@ -183,28 +183,28 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__40-[FICHomeViewController validateCountry]_block_invoke"
-                  moduleName = "Fox Sports Play"
-                  urlString = "file:///Users/KrishanS/Dropbox/Fox%20Sports%20Play%20iOS/Fox%20Sports%20Play/Fox%20Sports%20Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-                  timestampString = "435211220.290611"
+                  moduleName = "FoxSportsPlay"
+                  urlString = "file:///Users/KrishanS/Dropbox/FoxSportsPlay-New%20Version%20with%20all%20crashes%20fixed/FoxSportsPlay-iOS-master/Fox%20Sports%20Play/ViewControllers/HomeViewController/FICHomeViewController.m"
+                  timestampString = "437371769.177417"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "302"
-                  endingLineNumber = "302"
-                  offsetFromSymbolStart = "1452">
+                  startingLineNumber = "314"
+                  endingLineNumber = "314"
+                  offsetFromSymbolStart = "1288">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__40-[FICHomeViewController validateCountry]_block_invoke"
-                  moduleName = "Fox Sports Play"
-                  urlString = "file:///Users/KrishanS/Dropbox/Fox%20Sports%20Play%20iOS/Fox%20Sports%20Play/Fox%20Sports%20Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-                  timestampString = "435211220.290812"
+                  moduleName = "FoxSportsPlay"
+                  urlString = "file:///Users/KrishanS/Dropbox/FoxSportsPlay-New%20Version%20with%20all%20crashes%20fixed/FoxSportsPlay-iOS-master/Fox%20Sports%20Play/ViewControllers/HomeViewController/FICHomeViewController.m"
+                  timestampString = "437371769.177626"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "302"
-                  endingLineNumber = "302"
-                  offsetFromSymbolStart = "1468">
+                  startingLineNumber = "314"
+                  endingLineNumber = "314"
+                  offsetFromSymbolStart = "1318">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -392,22 +392,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/LiveUpcoming/FICLiveUpComingViewController.m"
-            timestampString = "434963549.534339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
-            landmarkName = "-tableView:numberOfRowsInSection:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Fox Sports Play/ViewControllers/LiveUpcoming/FICLiveUpComingViewController.m"
             timestampString = "435140133.393237"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -520,11 +504,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/ParentViewController/FICParentViewController.m"
-            timestampString = "436071092.9591"
+            timestampString = "437370482.089117"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "505"
-            endingLineNumber = "505"
+            startingLineNumber = "516"
+            endingLineNumber = "516"
             landmarkName = "-pushViedeoView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -536,11 +520,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/ParentViewController/FICParentViewController.m"
-            timestampString = "436071092.9591"
+            timestampString = "437370482.089117"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "533"
-            endingLineNumber = "533"
+            startingLineNumber = "544"
+            endingLineNumber = "544"
             landmarkName = "-doInBackgroud:"
             landmarkType = "5">
          </BreakpointContent>
@@ -584,11 +568,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/SplashViewController/FICSplashViewController.m"
-            timestampString = "435047588.748196"
+            timestampString = "437296199.822499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
             landmarkName = "-validateCountry:"
             landmarkType = "5">
          </BreakpointContent>
@@ -599,28 +583,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fox Sports Play/ViewControllers/SplashViewController/FICSplashViewController.m"
-            timestampString = "435047631.409102"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "-getGeoLocation"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437390283.1955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "868"
-            endingLineNumber = "868"
+            startingLineNumber = "854"
+            endingLineNumber = "854"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -632,11 +600,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437390283.1955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "891"
-            endingLineNumber = "891"
+            startingLineNumber = "877"
+            endingLineNumber = "877"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -648,11 +616,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437390283.1955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1056"
-            endingLineNumber = "1056"
+            startingLineNumber = "1042"
+            endingLineNumber = "1042"
             landmarkName = "-controllerDidChangeContent:"
             landmarkType = "5">
          </BreakpointContent>
@@ -664,11 +632,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437390283.1955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1066"
-            endingLineNumber = "1066"
+            startingLineNumber = "1052"
+            endingLineNumber = "1052"
             landmarkName = "-loginSuccess"
             landmarkType = "5">
          </BreakpointContent>
@@ -680,11 +648,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
-            timestampString = "436072307.896688"
+            timestampString = "437390283.1955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1081"
-            endingLineNumber = "1081"
+            startingLineNumber = "1067"
+            endingLineNumber = "1067"
             landmarkName = "-loginSuccess"
             landmarkType = "5">
          </BreakpointContent>
@@ -782,6 +750,134 @@
             startingLineNumber = "213"
             endingLineNumber = "213"
             landmarkName = "-startVideo"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
+            timestampString = "437371559.993353"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "524"
+            endingLineNumber = "524"
+            landmarkName = "-btnTapped:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
+            timestampString = "437371559.993353"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "650"
+            endingLineNumber = "650"
+            landmarkName = "-scrollViewDidEndDecelerating:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/SportsVodViewController/FICHorizontalTableViewCell.m"
+            timestampString = "437368544.32442"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
+            timestampString = "437390283.1955"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "852"
+            endingLineNumber = "852"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/SportsVodViewController/FICHorizontalTableViewCell.m"
+            timestampString = "437368668.149811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/SportsVodViewController/FICHorizontalTableViewCell.m"
+            timestampString = "437368680.14922"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-tableView:numberOfRowsInSection:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/SportsVodViewController/FICHorizontalTableViewCell.m"
+            timestampString = "437368694.565385"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-configureCell:atIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fox Sports Play/ViewControllers/HomeViewController/FICHomeViewController.m"
+            timestampString = "437390283.1955"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "729"
+            endingLineNumber = "729"
+            landmarkName = "-configureCell:atIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

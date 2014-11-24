@@ -1,0 +1,1051 @@
+TFox Sports Play
+v7
+r1
+cCheck dependencies
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Models/PreRollAdd/DoubleClick/README.txt
+c00000000544CE9BA0000000000000135
+t1414326714
+s309
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreItalic.ttf
+c00000000544CE9BA0000000000017CF4
+t1414326714
+s97524
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreRGD.ttf
+c00000000544CE9BA000000000001B0E0
+t1414326714
+s110816
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreRGH.ttf
+c00000000544CE9BA000000000001B240
+t1414326714
+s111168
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreRGHI.ttf
+c00000000544CE9BA0000000000016268
+t1414326714
+s90728
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreRGK.ttf
+c00000000544CE9BA000000000001AA28
+t1414326714
+s109096
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreRGKI.ttf
+c00000000544CE9BA0000000000015EE8
+t1414326714
+s89832
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreRGKL.ttf
+c00000000544CE9BA0000000000019ED8
+t1414326714
+s106200
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreRGKT.ttf
+c00000000544CE9BA000000000001AE2C
+t1414326714
+s110124
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreSCH.ttf
+c00000000544CE9BA0000000000019AE8
+t1414326714
+s105192
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreSCHC.ttf
+c00000000544CE9BA0000000000019F60
+t1414326714
+s106336
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreSCK.ttf
+c00000000544CE9BA00000000000196A8
+t1414326714
+s104104
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreSED.ttf
+c00000000544CE9BA000000000001B9E8
+t1414326714
+s113128
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreSEH.ttf
+c00000000544CE9BA000000000001B470
+t1414326714
+s111728
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreSEK.ttf
+c00000000544CE9BA000000000001946C
+t1414326714
+s103532
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Fonts/UScoreSET.ttf
+c00000000544CE9BA000000000001990C
+t1414326714
+s104716
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/Default/Default-568h@2x.png
+c00000000544CE9BA000000000002E9C5
+t1414326714
+s190917
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/Default/Default-Landscape-iPad.png
+c00000000544CE9BA00000000000300B7
+t1414326714
+s196791
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/Default/Default-Landscape-iPad@2x.png
+c00000000544CE9BA0000000000073791
+t1414326714
+s472977
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/Default/Default.png
+c00000000544CE9BA000000000001496C
+t1414326714
+s84332
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/Default/Default@2x.png
+c00000000544CE9BA000000000002FE6F
+t1414326714
+s196207
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/HomeScreen/ic_live.png
+c00000000544CE9BA00000000000003C4
+t1414326714
+s964
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/HomeScreen/ic_live@2x.png
+c00000000544CE9BA0000000000000E5B
+t1414326714
+s3675
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/HomeScreen/placeholder.png
+c00000000544CE9BA00000000000036AE
+t1414326714
+s13998
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/HomeScreen/placeholder@2x.png
+c00000000544CE9BA00000000000084B9
+t1414326714
+s33977
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/HomeScreen/reveal-icon.png
+c00000000544CE9BA000000000000045E
+t1414326714
+s1118
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/HomeScreen/reveal-icon@2x.png
+c00000000544CE9BA000000000000042A
+t1414326714
+s1066
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/HomeScreen/rightnavigationLogo.png
+c00000000544CE9BA000000000000118E
+t1414326714
+s4494
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/HomeScreen/rightnavigationLogo@2x.png
+c00000000544CE9BA00000000000021ED
+t1414326714
+s8685
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/Images.xcassets
+c00000000544CE9BA00000000000000AA
+t1414326714
+s170
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/ScrollViewDetails/close.png
+c00000000544CE9BA0000000000000276
+t1414326714
+s630
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/ScrollViewDetails/close@2x.png
+c00000000544CE9BA0000000000000666
+t1414326714
+s1638
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/ScrollViewDetails/ic_play_large.png
+c00000000544CE9BA0000000000000211
+t1414326714
+s529
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/ScrollViewDetails/ic_play_large@2x.png
+c00000000544CE9BA00000000000003B4
+t1414326714
+s948
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/ScrollViewDetails/playbutton.png
+c00000000544CE9BA0000000000001EB4
+t1414326714
+s7860
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/ScrollViewDetails/playbutton@2x.png
+c00000000544CE9BA0000000000003417
+t1414326714
+s13335
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/SplashScreen/FSplay_logo_iPad.png
+c00000000544CE9BA000000000001A884
+t1414326714
+s108676
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/SplashScreen/FSplay_logo_iPad@2x.png
+c00000000544CE9BA000000000002803E
+t1414326714
+s163902
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/SplashScreen/background.png
+c00000000544CE9BA000000000001254A
+t1414326714
+s75082
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/SplashScreen/background@2x.png
+c00000000544CE9BA00000000000272F9
+t1414326714
+s160505
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/SplashScreen/foxPlayLogo.png
+c00000000544CE9BA000000000000858C
+t1414326714
+s34188
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/SplashScreen/foxPlayLogo@2x.png
+c00000000544CE9BA00000000000142BF
+t1414326714
+s82623
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/SplashScreen/splash.png
+c00000000544CE9BA0000000000016933
+t1414326714
+s92467
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/SplashScreen/splash@2x.png
+c00000000544CE9BA000000000003A292
+t1414326714
+s238226
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/iconImageSets/Icon-60@2x.png
+c00000000544CE9BA0000000000008934
+t1414326714
+s35124
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/iconImageSets/Icon-76.png
+c00000000544CE9BA0000000000001E91
+t1414326714
+s7825
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/iconImageSets/Icon-76@2x.png
+c00000000544CE9BA0000000000005AF3
+t1414326714
+s23283
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/iconImageSets/Icon-Small-40.png
+c00000000544CE9BA0000000000005485
+t1414326714
+s21637
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Images/iconImageSets/Icon-Small-40@2x.png
+c00000000544CE9BA0000000000006BCB
+t1414326714
+s27595
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/LoginHtml/login.html
+c00000000544CE9BA0000000000001A91
+t1414326714
+s6801
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/LoginHtml/logout.html
+c00000000544CE9BA0000000000000669
+t1414326714
+s1641
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Plist/ntp.hosts
+c00000000544CE9BA0000000000000011
+t1414326714
+s17
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Resources/Strings/Localizable.strings
+c00000000544CE9BA0000000000000228
+t1414326714
+s552
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HelpT&C/iPad/HelpTandConditions_iPad.xib
+c00000000544CE9BA0000000000000814
+t1414326714
+s2068
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HelpT&C/iPhone/HelpTandConditions_iPhone.xib
+c00000000544CE9BA0000000000000A23
+t1414326714
+s2595
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HomeView/iPad/HomeView_iPad.xib
+c00000000544CE9BA0000000000004041
+t1414326714
+s16449
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HomeView/iPad/LiveUpcomingTableCell_iPad.xib
+c00000000544CE9BA0000000000001313
+t1414326714
+s4883
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HomeView/iPhone/HomeView_iPhone.xib
+c00000000544CE9BA0000000000001B10
+t1414326714
+s6928
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HomeView/iPhone/LiveUpcomingTableCell_iPhone.xib
+c00000000544CE9BA00000000000012EF
+t1414326714
+s4847
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LiveUpcoming/iPad/LiveUpComing_iPad.xib
+c00000000544CE9BA0000000000000BEE
+t1414326714
+s3054
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LiveUpcoming/iPad/LiveUpcomingCollectionViewCell_iPad.xib
+c00000000544CE9BA000000000000181A
+t1414326714
+s6170
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LiveUpcoming/iPhone/LiveUpComing_iPhone.xib
+c00000000544CE9BA0000000000000966
+t1414326714
+s2406
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LiveUpcoming/iPhone/LiveUpcomingTableViewCell_iPhone.xib
+c00000000544CE9BA00000000000017B1
+t1414326714
+s6065
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LoginView/iPhone/LoginView_iPhone.xib
+c00000000544CE9BA0000000000000F2A
+t1414326714
+s3882
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LoginView/ipad/LoginView_iPad.xib
+c00000000544CE9BA0000000000000B8A
+t1414326714
+s2954
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/ScrollViewDetails/iPad/ScrollViewDetailsTableCell_iPad.xib
+c00000000544CE9BA0000000000000BE6
+t1414326714
+s3046
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/ScrollViewDetails/iPad/ScrollViewDetails_iPad.xib
+c00000000544CE9BA0000000000003C24
+t1414326714
+s15396
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/ScrollViewDetails/iPhone/ScrollViewDetailsTableCell_iPhone.xib
+c00000000544CE9BA0000000000000BD8
+t1414326714
+s3032
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/ScrollViewDetails/iPhone/ScrollViewDetails_iPhone.xib
+c00000000544CE9BA0000000000002E85
+t1414326714
+s11909
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SideMenuView/iPad/SideMenuView_iPad.xib
+c00000000544CE9BA00000000000009B7
+t1414326714
+s2487
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SideMenuView/iPhone/SideMenuView_iPhone.xib
+c00000000544CE9BA0000000000000ACB
+t1414326714
+s2763
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SplashView/iPad/SplashView_iPad.xib
+c00000000544CE9BA0000000000000FE3
+t1414326714
+s4067
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SplashView/iPhone/SplashView_iPhone.xib
+c00000000544CE9BA0000000000001685
+t1414326714
+s5765
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPad/../../../ViewControllers/SportsVodViewController/FICHorizontalTableViewCell.xib
+c00000000544CE9BA0000000000000C9F
+t1414326714
+s3231
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPad/SportsVod_iPad.xib
+c00000000544CE9BA0000000000000C46
+t1414326714
+s3142
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPad/adsTableViewCell_iPad.xib
+c00000000544CE9BA000000000000080C
+t1414326714
+s2060
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPhone/SportsVodTableViewCell_iPhone.xib
+c00000000544CE9BA000000000000106B
+t1414326714
+s4203
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPhone/SportsVod_iPhone.xib
+c00000000544CE9BA0000000000001414
+t1414326714
+s5140
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPhone/adsTableViewCell_iPhone.xib
+c00000000544CE9BA00000000000007FD
+t1414326714
+s2045
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/UpcomingView/Upcoming_iPad.xib
+c00000000544CE9BA000000000000322E
+t1414326714
+s12846
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/UpcomingView/iPhone/Upcoming_iPhone.xib
+c00000000544CE9BA0000000000003159
+t1414326714
+s12633
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/VideoPlayer/iPad/VideoPlayer_iPad.xib
+c00000000544CE9BA0000000000000B0B
+t1414326714
+s2827
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/VideoPlayer/iPhone/VideoPlayer_iPhone.xib
+c00000000544CE9BA0000000000000C49
+t1414326714
+s3145
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/en.lproj/InfoPlist.strings
+c00000000544CE9BA000000000000002D
+t1414326714
+s45
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Info.plist
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Default-568h@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Default-Landscape-iPad.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Default-Landscape-iPad@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Default.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Default@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/FICHorizontalTableViewCell.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/FSplay_logo_iPad.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/FSplay_logo_iPad@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/HelpTandConditions_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/HelpTandConditions_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/HomeView_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/HomeView_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-60@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-76.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-76@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-Small-40.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-Small-40@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Images.xcassets
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/LiveUpComing_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/LiveUpComing_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/LiveUpcomingCollectionViewCell_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/LiveUpcomingTableCell_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/LiveUpcomingTableCell_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/LiveUpcomingTableViewCell_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Localizable.strings
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/LoginView_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/LoginView_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/README.txt
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ScrollViewDetailsTableCell_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ScrollViewDetailsTableCell_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ScrollViewDetails_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ScrollViewDetails_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/SideMenuView_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/SideMenuView_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/SplashView_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/SplashView_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/SportsVodTableViewCell_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/SportsVod_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/SportsVod_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreItalic.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGD.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGH.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGHI.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGK.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGKI.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGKL.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGKT.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSCH.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSCHC.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSCK.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSED.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSEH.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSEK.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSET.ttf
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Upcoming_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Upcoming_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/VideoPlayer_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/VideoPlayer_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/adsTableViewCell_iPad.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/adsTableViewCell_iPhone.nib
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/background.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/background@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/close.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/close@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/foxPlayLogo.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/foxPlayLogo@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ic_live.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ic_live@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ic_play_large.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ic_play_large@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/login.html
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/logout.html
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/ntp.hosts
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/placeholder.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/placeholder@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/playbutton.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/playbutton@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/reveal-icon.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/reveal-icon@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/rightnavigationLogo.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/rightnavigationLogo@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/splash.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/splash@2x.png
+t2
+s0
+
+N/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Fox Sports Play.build/Debug/Fox Sports Play.build/Script-A25A053A19DE4DC8004BF2B6.sh
+c00000000000000000000000000000000
+t2
+s0
+
+NFox Sports Play/Fox Sports Play-Info.plist
+c00000000544CE9BA000000000000096A
+t1414326714
+s2410
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies437286054#437286054#0(115"[BEROR]No architectures to compile for (ONLY_ACTIVE_ARCH=YES, active arch=x86_64, VALID_ARCHS=armv7 armv7s arm64).1(4@107"No architectures to compile for (ONLY_ACTIVE_ARCH=YES, active arch=x86_64, VALID_ARCHS=armv7 armv7s arm64).437286054#18446744073709551615#0#0(1@0"0(0#1#0"17247791808#0"0#
+
+CCodeSign "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HelpT&C/iPad/HelpTandConditions_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HelpT&C/iPhone/HelpTandConditions_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HomeView/iPad/HomeView_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HomeView/iPad/LiveUpcomingTableCell_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HomeView/iPhone/HomeView_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/HomeView/iPhone/LiveUpcomingTableCell_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LiveUpcoming/iPad/LiveUpComing_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LiveUpcoming/iPad/LiveUpcomingCollectionViewCell_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LiveUpcoming/iPhone/LiveUpComing_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LiveUpcoming/iPhone/LiveUpcomingTableViewCell_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LoginView/iPhone/LoginView_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/LoginView/ipad/LoginView_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/ScrollViewDetails/iPad/ScrollViewDetailsTableCell_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/ScrollViewDetails/iPad/ScrollViewDetails_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/ScrollViewDetails/iPhone/ScrollViewDetailsTableCell_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/ScrollViewDetails/iPhone/ScrollViewDetails_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SideMenuView/iPad/SideMenuView_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SideMenuView/iPhone/SideMenuView_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SplashView/iPad/SplashView_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SplashView/iPhone/SplashView_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPad/../../../ViewControllers/SportsVodViewController/FICHorizontalTableViewCell.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPad/SportsVod_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPad/adsTableViewCell_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPhone/SportsVodTableViewCell_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPhone/SportsVod_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/SportsVodView/iPhone/adsTableViewCell_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/UpcomingView/Upcoming_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/UpcomingView/iPhone/Upcoming_iPhone.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/VideoPlayer/iPad/VideoPlayer_iPad.xib"
+r0
+
+CCompileXIB "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/Fox Sports Play/Views/VideoPlayer/iPhone/VideoPlayer_iPhone.xib"
+r0
+
+CCopyStringsFile "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/Localizable.strings" "Fox Sports Play/Resources/Strings/Localizable.strings"
+r0
+
+CCopyStringsFile "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Resources/en.lproj/InfoPlist.strings" "Fox Sports Play/en.lproj/InfoPlist.strings"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Default-568h@2x.png "Fox Sports Play/Resources/Images/Default/Default-568h@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Default-Landscape-iPad.png "Fox Sports Play/Resources/Images/Default/Default-Landscape-iPad.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Default-Landscape-iPad@2x.png "Fox Sports Play/Resources/Images/Default/Default-Landscape-iPad@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Default.png "Fox Sports Play/Resources/Images/Default/Default.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Default@2x.png "Fox Sports Play/Resources/Images/Default/Default@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/FSplay_logo_iPad.png "Fox Sports Play/Resources/Images/SplashScreen/FSplay_logo_iPad.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/FSplay_logo_iPad@2x.png "Fox Sports Play/Resources/Images/SplashScreen/FSplay_logo_iPad@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-60@2x.png "Fox Sports Play/Resources/Images/iconImageSets/Icon-60@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-76.png "Fox Sports Play/Resources/Images/iconImageSets/Icon-76.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-76@2x.png "Fox Sports Play/Resources/Images/iconImageSets/Icon-76@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-Small-40.png "Fox Sports Play/Resources/Images/iconImageSets/Icon-Small-40.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Icon-Small-40@2x.png "Fox Sports Play/Resources/Images/iconImageSets/Icon-Small-40@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/Images.xcassets "Fox Sports Play/Resources/Images/Images.xcassets"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/README.txt "Fox Sports Play/Models/PreRollAdd/DoubleClick/README.txt"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreItalic.ttf "Fox Sports Play/Resources/Fonts/UScoreItalic.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGD.ttf "Fox Sports Play/Resources/Fonts/UScoreRGD.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGH.ttf "Fox Sports Play/Resources/Fonts/UScoreRGH.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGHI.ttf "Fox Sports Play/Resources/Fonts/UScoreRGHI.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGK.ttf "Fox Sports Play/Resources/Fonts/UScoreRGK.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGKI.ttf "Fox Sports Play/Resources/Fonts/UScoreRGKI.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGKL.ttf "Fox Sports Play/Resources/Fonts/UScoreRGKL.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreRGKT.ttf "Fox Sports Play/Resources/Fonts/UScoreRGKT.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSCH.ttf "Fox Sports Play/Resources/Fonts/UScoreSCH.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSCHC.ttf "Fox Sports Play/Resources/Fonts/UScoreSCHC.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSCK.ttf "Fox Sports Play/Resources/Fonts/UScoreSCK.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSED.ttf "Fox Sports Play/Resources/Fonts/UScoreSED.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSEH.ttf "Fox Sports Play/Resources/Fonts/UScoreSEH.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSEK.ttf "Fox Sports Play/Resources/Fonts/UScoreSEK.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/UScoreSET.ttf "Fox Sports Play/Resources/Fonts/UScoreSET.ttf"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/background.png "Fox Sports Play/Resources/Images/SplashScreen/background.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/background@2x.png "Fox Sports Play/Resources/Images/SplashScreen/background@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/close.png "Fox Sports Play/Resources/Images/ScrollViewDetails/close.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/close@2x.png "Fox Sports Play/Resources/Images/ScrollViewDetails/close@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/foxPlayLogo.png "Fox Sports Play/Resources/Images/SplashScreen/foxPlayLogo.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/foxPlayLogo@2x.png "Fox Sports Play/Resources/Images/SplashScreen/foxPlayLogo@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/ic_live.png "Fox Sports Play/Resources/Images/HomeScreen/ic_live.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/ic_live@2x.png "Fox Sports Play/Resources/Images/HomeScreen/ic_live@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/ic_play_large.png "Fox Sports Play/Resources/Images/ScrollViewDetails/ic_play_large.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/ic_play_large@2x.png "Fox Sports Play/Resources/Images/ScrollViewDetails/ic_play_large@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/login.html "Fox Sports Play/Resources/LoginHtml/login.html"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/logout.html "Fox Sports Play/Resources/LoginHtml/logout.html"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/ntp.hosts "Fox Sports Play/Resources/Plist/ntp.hosts"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/placeholder.png "Fox Sports Play/Resources/Images/HomeScreen/placeholder.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/placeholder@2x.png "Fox Sports Play/Resources/Images/HomeScreen/placeholder@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/playbutton.png "Fox Sports Play/Resources/Images/ScrollViewDetails/playbutton.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/playbutton@2x.png "Fox Sports Play/Resources/Images/ScrollViewDetails/playbutton@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/reveal-icon.png "Fox Sports Play/Resources/Images/HomeScreen/reveal-icon.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/reveal-icon@2x.png "Fox Sports Play/Resources/Images/HomeScreen/reveal-icon@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/rightnavigationLogo.png "Fox Sports Play/Resources/Images/HomeScreen/rightnavigationLogo.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/rightnavigationLogo@2x.png "Fox Sports Play/Resources/Images/HomeScreen/rightnavigationLogo@2x.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/splash.png "Fox Sports Play/Resources/Images/SplashScreen/splash.png"
+r0
+
+CCpResource build/Debug/FoxSportsPlay.app/Contents/Resources/splash@2x.png "Fox Sports Play/Resources/Images/SplashScreen/splash@2x.png"
+r0
+
+CPhaseScriptExecution "Run Script" "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Fox Sports Play.build/Debug/Fox Sports Play.build/Script-A25A053A19DE4DC8004BF2B6.sh"
+r0
+
+CProcessInfoPlistFile "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app/Contents/Info.plist" "Fox Sports Play/Fox Sports Play-Info.plist"
+r0
+
+CTouch "/Users/KrishanS/Dropbox/FoxSportsPlay-New Version with all crashes fixed/FoxSportsPlay-iOS-master/build/Debug/FoxSportsPlay.app"
+r0
+

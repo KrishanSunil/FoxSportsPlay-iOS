@@ -13,6 +13,9 @@
 		81880E2819FC981300C90058 /* libGoogleIMA3ForAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81880E2519FC981300C90058 /* libGoogleIMA3ForAdMob.a */; };
 		81880E2919FC9C8C00C90058 /* ic_live.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F70FCE19EFBCEB00D42E09 /* ic_live.png */; };
 		81880E2A19FC9C8C00C90058 /* ic_live@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F70FCF19EFBCEB00D42E09 /* ic_live@2x.png */; };
+		A216F38B1A10757A00B9EF63 /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = A216F3861A10757A00B9EF63 /* NetAssociation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A216F38D1A10757A00B9EF63 /* NSDate+NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A216F38A1A10757A00B9EF63 /* NSDate+NetworkClock.m */; };
+		A216F3931A108B5C00B9EF63 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A216F3921A108B5C00B9EF63 /* GCDAsyncUdpSocket.m */; };
 		A21D99ED19D54F3300F41246 /* SportsVodTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21D99EC19D54F3300F41246 /* SportsVodTableViewCell_iPhone.xib */; };
 		A21D99EF19D55C0A00F41246 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A21D99EE19D55C0A00F41246 /* Default-568h@2x.png */; };
 		A227424B19C2E80B0056B9FD /* LiveUpcomingTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A227424A19C2E80B0056B9FD /* LiveUpcomingTableViewCell_iPhone.xib */; };
@@ -123,9 +126,6 @@
 		A26EE9EB19B59ACC0094382B /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A26EE9DB19B59ACC0094382B /* UIView+WebCacheOperation.m */; };
 		A26EE9ED19B59AE20094382B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26EE9EC19B59AE20094382B /* ImageIO.framework */; };
 		A26EE9EF19B5A7F50094382B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A26EE9EE19B5A7F50094382B /* placeholder.png */; };
-		A26EFD9B19AB1C03001AD8FC /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = A26EFD9819AB1C03001AD8FC /* NetAssociation.m */; };
-		A26EFD9C19AB1C03001AD8FC /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A26EFD9A19AB1C03001AD8FC /* NetworkClock.m */; };
-		A26EFD9F19AB1C13001AD8FC /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A26EFD9E19AB1C13001AD8FC /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A26EFDA219AB1C97001AD8FC /* ntp.hosts in Resources */ = {isa = PBXBuildFile; fileRef = A26EFDA119AB1C97001AD8FC /* ntp.hosts */; };
 		A26EFDA519AB325F001AD8FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A26EFDA419AB325F001AD8FC /* Localizable.strings */; };
 		A26F50AF19DD433A00D37795 /* adsTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26F50AE19DD433A00D37795 /* adsTableViewCell_iPhone.xib */; };
@@ -187,6 +187,7 @@
 		A28083E719BD78D40014059C /* HighLights.m in Sources */ = {isa = PBXBuildFile; fileRef = A28083E619BD78D40014059C /* HighLights.m */; };
 		A28083EA19BD78D40014059C /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = A28083E919BD78D40014059C /* Country.m */; };
 		A28083ED19BD78D40014059C /* Content.m in Sources */ = {isa = PBXBuildFile; fileRef = A28083EC19BD78D40014059C /* Content.m */; };
+		A2A718C21A11A64D00B6169F /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A216F3881A10757A00B9EF63 /* NetworkClock.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A2B70FC619EE10D1009B167F /* FSplay_logo_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B70FC419EE10D1009B167F /* FSplay_logo_iPad.png */; };
 		A2B70FC719EE10D1009B167F /* FSplay_logo_iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B70FC519EE10D1009B167F /* FSplay_logo_iPad@2x.png */; };
 		A2B70FCD19EE1447009B167F /* Default-Landscape-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B70FCB19EE1447009B167F /* Default-Landscape-iPad.png */; };
@@ -222,6 +223,15 @@
 		81880E2319FC981300C90058 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
 		81880E2419FC981300C90058 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		81880E2519FC981300C90058 /* libGoogleIMA3ForAdMob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleIMA3ForAdMob.a; sourceTree = "<group>"; };
+		A216F3841A10757A00B9EF63 /* ios-ntp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-ntp.h"; sourceTree = "<group>"; };
+		A216F3851A10757A00B9EF63 /* NetAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetAssociation.h; sourceTree = "<group>"; };
+		A216F3861A10757A00B9EF63 /* NetAssociation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetAssociation.m; sourceTree = "<group>"; };
+		A216F3871A10757A00B9EF63 /* NetworkClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClock.h; sourceTree = "<group>"; };
+		A216F3881A10757A00B9EF63 /* NetworkClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClock.m; sourceTree = "<group>"; };
+		A216F3891A10757A00B9EF63 /* NSDate+NetworkClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NetworkClock.h"; sourceTree = "<group>"; };
+		A216F38A1A10757A00B9EF63 /* NSDate+NetworkClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NetworkClock.m"; sourceTree = "<group>"; };
+		A216F3911A108B5C00B9EF63 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		A216F3921A108B5C00B9EF63 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		A21D99EC19D54F3300F41246 /* SportsVodTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SportsVodTableViewCell_iPhone.xib; sourceTree = "<group>"; };
 		A21D99EE19D55C0A00F41246 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A227424A19C2E80B0056B9FD /* LiveUpcomingTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveUpcomingTableViewCell_iPhone.xib; sourceTree = "<group>"; };
@@ -294,7 +304,7 @@
 		A2600EA5197E4E7600CE0D2A /* FICAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FICAppDelegate.h; sourceTree = "<group>"; };
 		A2600EA6197E4E7600CE0D2A /* FICAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FICAppDelegate.m; sourceTree = "<group>"; };
 		A2600EA9197E4E7600CE0D2A /* Fox_Sports_Play.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fox_Sports_Play.xcdatamodel; sourceTree = "<group>"; };
-		A2600EB1197E4E7600CE0D2A /* Fox Sports PlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fox Sports PlayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2600EB1197E4E7600CE0D2A /* Fox Sports PlayTests */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = file; name = "Fox Sports PlayTests"; path = "Fox Sports PlayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2600EB2197E4E7600CE0D2A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A2600EBB197E4E7600CE0D2A /* Fox Sports PlayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fox Sports PlayTests-Info.plist"; sourceTree = "<group>"; };
 		A2600EBD197E4E7600CE0D2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -412,12 +422,6 @@
 		A26EE9DB19B59ACC0094382B /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		A26EE9EC19B59AE20094382B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A26EE9EE19B5A7F50094382B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
-		A26EFD9719AB1C03001AD8FC /* NetAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetAssociation.h; sourceTree = "<group>"; };
-		A26EFD9819AB1C03001AD8FC /* NetAssociation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetAssociation.m; sourceTree = "<group>"; };
-		A26EFD9919AB1C03001AD8FC /* NetworkClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClock.h; sourceTree = "<group>"; };
-		A26EFD9A19AB1C03001AD8FC /* NetworkClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClock.m; sourceTree = "<group>"; };
-		A26EFD9D19AB1C13001AD8FC /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
-		A26EFD9E19AB1C13001AD8FC /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
 		A26EFDA119AB1C97001AD8FC /* ntp.hosts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ntp.hosts; sourceTree = "<group>"; };
 		A26EFDA419AB325F001AD8FC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A26F50AE19DD433A00D37795 /* adsTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = adsTableViewCell_iPhone.xib; sourceTree = "<group>"; };
@@ -841,7 +845,7 @@
 			isa = PBXGroup;
 			children = (
 				A2600E91197E4E7600CE0D2A /* FoxSportsPlay.app */,
-				A2600EB1197E4E7600CE0D2A /* Fox Sports PlayTests.xctest */,
+				A2600EB1197E4E7600CE0D2A /* Fox Sports PlayTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1242,12 +1246,15 @@
 		A26EFD8D19AB1BCB001AD8FC /* NTPService */ = {
 			isa = PBXGroup;
 			children = (
-				A26EFD9D19AB1C13001AD8FC /* AsyncUdpSocket.h */,
-				A26EFD9E19AB1C13001AD8FC /* AsyncUdpSocket.m */,
-				A26EFD9719AB1C03001AD8FC /* NetAssociation.h */,
-				A26EFD9819AB1C03001AD8FC /* NetAssociation.m */,
-				A26EFD9919AB1C03001AD8FC /* NetworkClock.h */,
-				A26EFD9A19AB1C03001AD8FC /* NetworkClock.m */,
+				A216F3911A108B5C00B9EF63 /* GCDAsyncUdpSocket.h */,
+				A216F3921A108B5C00B9EF63 /* GCDAsyncUdpSocket.m */,
+				A216F3841A10757A00B9EF63 /* ios-ntp.h */,
+				A216F3851A10757A00B9EF63 /* NetAssociation.h */,
+				A216F3861A10757A00B9EF63 /* NetAssociation.m */,
+				A216F3871A10757A00B9EF63 /* NetworkClock.h */,
+				A216F3881A10757A00B9EF63 /* NetworkClock.m */,
+				A216F3891A10757A00B9EF63 /* NSDate+NetworkClock.h */,
+				A216F38A1A10757A00B9EF63 /* NSDate+NetworkClock.m */,
 			);
 			path = NTPService;
 			sourceTree = "<group>";
@@ -1633,7 +1640,7 @@
 			);
 			name = "Fox Sports PlayTests";
 			productName = "Fox Sports PlayTests";
-			productReference = A2600EB1197E4E7600CE0D2A /* Fox Sports PlayTests.xctest */;
+			productReference = A2600EB1197E4E7600CE0D2A /* Fox Sports PlayTests */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1795,6 +1802,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A718C21A11A64D00B6169F /* NetworkClock.m in Sources */,
 				A2B7573019C83BAA00C2FEF2 /* FICHomeScrollViewDetailsController.m in Sources */,
 				A2B7573119C83BAA00C2FEF2 /* FICScrollViewDetailTableViewCell.m in Sources */,
 				A26EE9EB19B59ACC0094382B /* UIView+WebCacheOperation.m in Sources */,
@@ -1803,6 +1811,7 @@
 				A274E370197F688A000C5AAE /* UIRefreshControl+AFNetworking.m in Sources */,
 				A274E366197F688A000C5AAE /* AFURLConnectionOperation.m in Sources */,
 				A271B06319879C2500AE336C /* SWRevealViewController.m in Sources */,
+				A216F38D1A10757A00B9EF63 /* NSDate+NetworkClock.m in Sources */,
 				A26EE9DD19B59ACC0094382B /* NSData+ImageContentType.m in Sources */,
 				A271B04A198748A700AE336C /* FICCategoryDataAccess.m in Sources */,
 				A26EE9E919B59ACC0094382B /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1810,7 +1819,6 @@
 				A273EC8C19AD8F1D002105C8 /* FICBackgroundProcess.m in Sources */,
 				A271B05519879B6600AE336C /* FICHomeViewController.m in Sources */,
 				A2BBCD5B19ED030500D2163D /* UIImage+ImageEffects.m in Sources */,
-				A26EFD9C19AB1C03001AD8FC /* NetworkClock.m in Sources */,
 				A2600ED7197E514300CE0D2A /* FICCommonUtilities.m in Sources */,
 				A274E36F197F688A000C5AAE /* UIProgressView+AFNetworking.m in Sources */,
 				A2600EA3197E4E7600CE0D2A /* main.m in Sources */,
@@ -1818,9 +1826,7 @@
 				A274E36C197F688A000C5AAE /* UIAlertView+AFNetworking.m in Sources */,
 				A26EE9E219B59ACC0094382B /* SDWebImageDownloaderOperation.m in Sources */,
 				A26EE9E719B59ACC0094382B /* UIImage+MultiFormat.m in Sources */,
-				A26EFD9B19AB1C03001AD8FC /* NetAssociation.m in Sources */,
 				A2600EDD197E549800CE0D2A /* FICSplashViewController.m in Sources */,
-				A26EFD9F19AB1C13001AD8FC /* AsyncUdpSocket.m in Sources */,
 				A274E368197F688A000C5AAE /* AFURLResponseSerialization.m in Sources */,
 				A227425119C2E9CD0056B9FD /* FICLiveTableViewCell.m in Sources */,
 				A274E36D197F688A000C5AAE /* UIButton+AFNetworking.m in Sources */,
@@ -1847,6 +1853,7 @@
 				A273674819BEC855008B75D0 /* PersistentStack.m in Sources */,
 				A274E361197F688A000C5AAE /* AFHTTPRequestOperation.m in Sources */,
 				A26EE9E019B59ACC0094382B /* SDWebImageDecoder.m in Sources */,
+				A216F38B1A10757A00B9EF63 /* NetAssociation.m in Sources */,
 				A28083ED19BD78D40014059C /* Content.m in Sources */,
 				A274E369197F688A000C5AAE /* AFURLSessionManager.m in Sources */,
 				A26EE9DF19B59ACC0094382B /* SDWebImageCompat.m in Sources */,
@@ -1854,6 +1861,7 @@
 				A271B05B19879B9700AE336C /* FICSideMenuViewController.m in Sources */,
 				A24DDDA419BFE88600664AAA /* FICSportsVodViewController.m in Sources */,
 				A271B0501987552800AE336C /* FICThubmnailDataAccess.m in Sources */,
+				A216F3931A108B5C00B9EF63 /* GCDAsyncUdpSocket.m in Sources */,
 				A26A3904198892100016CBCB /* FICLanguagesDataAccess.m in Sources */,
 				A273674B19BEC9F3008B75D0 /* ModelObject.m in Sources */,
 				A2600EA7197E4E7600CE0D2A /* FICAppDelegate.m in Sources */,
@@ -1940,8 +1948,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Satellite Television Asian Region Limited (72L6U72YE4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Satellite Television Asian Region Limited (72L6U72YE4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karthigesu Jayabalan (XNWES6Q48J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Karthigesu Jayabalan (XNWES6Q48J)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1960,7 +1968,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = FoxSportsPlay;
-				PROVISIONING_PROFILE = "4e88c384-aacd-46d8-ab74-2b7350571800";
+				PROVISIONING_PROFILE = "717f214f-e758-4133-a193-fb2120a67f12";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1981,8 +1989,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Satellite Television Asian Region Limited (72L6U72YE4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Satellite Television Asian Region Limited (72L6U72YE4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karthigesu Jayabalan (XNWES6Q48J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Karthigesu Jayabalan (XNWES6Q48J)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1994,7 +2002,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = FoxSportsPlay;
-				PROVISIONING_PROFILE = "4e88c384-aacd-46d8-ab74-2b7350571800";
+				PROVISIONING_PROFILE = "717f214f-e758-4133-a193-fb2120a67f12";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2004,8 +2012,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karthigesu Jayabalan (XNWES6Q48J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Karthigesu Jayabalan (XNWES6Q48J)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fox",
@@ -2259,7 +2267,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = FoxSportsPlay;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "717f214f-e758-4133-a193-fb2120a67f12";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -2269,8 +2277,8 @@
 		A2600EC5197E4E7600CE0D2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karthigesu Jayabalan (XNWES6Q48J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Karthigesu Jayabalan (XNWES6Q48J)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fox",
@@ -2524,7 +2532,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = FoxSportsPlay;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "717f214f-e758-4133-a193-fb2120a67f12";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;

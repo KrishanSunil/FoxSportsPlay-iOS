@@ -55,6 +55,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *upComingLable;
 @property (weak, nonatomic) IBOutlet UILabel *watchliveLable;
 @property (weak, nonatomic) IBOutlet UILabel *mainCategoryLable;
+@property (nonatomic) int rows;
 - (IBAction)watchLiveButtonClicked:(id)sender;
 
 - (IBAction)videosButtonClicked:(id)sender;
@@ -72,6 +73,7 @@
 @synthesize liveUpcomingTableView;
 @synthesize loginViewController=_loginViewController;
 @synthesize clickedEntry=_clickedEntry;
+@synthesize rows=_rows;
 #pragma mark - Timer Method
 
 -(void)startTimer {
@@ -129,7 +131,7 @@
 -(void)loadData{
     FICAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     FICEntriesDataAccess *entriesDataAccess = [[FICEntriesDataAccess alloc]init];
-    self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
+    self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:5 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
     
 //    if (!self.vod_Array||self.vod_Array.count==0) {
 //        [self showAlertViewWithTag:GeoBlocked
@@ -204,13 +206,14 @@
     [fetchRequest setPredicate:predicate];
     [fetchRequest setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     [fetchRequest setIncludesSubentities:YES];
+    [fetchRequest setReturnsObjectsAsFaults:NO];
     
     [fetchRequest setFetchBatchSize:5];
     
     NSFetchedResultsController *theFetchedResultsController =
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                         managedObjectContext:appDelegate.persistentStack.managedObjectContext sectionNameKeyPath:nil
-                                                   cacheName:@"LiveUpcomingCache"];
+                                                   cacheName:nil];
     self.fetchedResultsController = theFetchedResultsController;
     _fetchedResultsController.delegate = self;
 
@@ -265,7 +268,7 @@
             
             if (!self.vod_Array||self.vod_Array.count>0) {
                 FICEntriesDataAccess *entriesDataAccess = [[FICEntriesDataAccess alloc]init];
-                self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:appDelegate.persistentStack.managedObjectContext]];
+                self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:5 liveVodUpcoming:VOD context:appDelegate.persistentStack.managedObjectContext]];
 
                 [self performSelectorOnMainThread:@selector(setupScrollingView) withObject:nil waitUntilDone:YES];
                 
@@ -327,13 +330,13 @@
     FICAppDelegate *delegate = [UIApplication sharedApplication].delegate;
    
     if (!self.vod_Array||self.vod_Array.count==0) {
-        self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:delegate.persistentStack.backgroundManagedObjectContext]];
+        self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:5 liveVodUpcoming:VOD context:delegate.persistentStack.backgroundManagedObjectContext]];
         
         //                    [self setupScrollingView];
         [self performSelectorOnMainThread:@selector(setupScrollingView) withObject:nil waitUntilDone:YES];
     }else{
         
-        NSMutableArray *tempVodArray =[[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:delegate.persistentStack.backgroundManagedObjectContext]];
+        NSMutableArray *tempVodArray =[[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:5 liveVodUpcoming:VOD context:delegate.persistentStack.backgroundManagedObjectContext]];
         BOOL isSame = false;
         for (Entries *entry in tempVodArray) {
             
@@ -347,7 +350,7 @@
             
             tempVodArray = nil;
             if (!isSame) {
-                self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:delegate.persistentStack.managedObjectContext]];
+                self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:5 liveVodUpcoming:VOD context:delegate.persistentStack.managedObjectContext]];
                 [self performSelectorOnMainThread:@selector(setupScrollingView) withObject:nil waitUntilDone:YES];
                 break;
             }
@@ -382,12 +385,12 @@
 
 
     if (!self.vod_Array||self.vod_Array.count==0) {
-        self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
+        self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:5 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
 
         [self performSelectorOnMainThread:@selector(setupScrollingView) withObject:nil waitUntilDone:YES];
     }else{
         
-        NSMutableArray *tempVodArray =[[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
+        NSMutableArray *tempVodArray =[[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:5 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
         BOOL isSame = false;
         for (Entries *entry in tempVodArray) {
             
@@ -401,7 +404,7 @@
             
             tempVodArray = nil;
             if (!isSame) {
-                self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:6 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
+                self.vod_Array = [[NSMutableArray alloc]initWithArray:[entriesDataAccess retriveLimitedEntryData:5 liveVodUpcoming:VOD context:appDelegate.persistentStack.backgroundManagedObjectContext]];
                 [self performSelectorOnMainThread:@selector(setupScrollingView) withObject:nil waitUntilDone:YES];
                 break;
             }
@@ -431,9 +434,15 @@
         return [[NSMutableArray alloc]init];
     }
     
-    NSMutableArray *array = [NSMutableArray arrayWithArray:self.vod_Array];//[NSMutableArray alloc]initwit];
-    [array removeLastObject];
-    [array insertObject:self.vod_Array[self.vod_Array.count-2] atIndex:0];
+    NSMutableArray *array = [NSMutableArray arrayWithArray:self.vod_Array];
+    
+//    if (self.vod_Array.count>5) {
+//        [array removeLastObject];
+//        [array insertObject:self.vod_Array[self.vod_Array.count-2] atIndex:0];
+//    }else{
+        [array insertObject:self.vod_Array.lastObject atIndex:0];
+//    }
+    
 //    [array insertObject:self.vod_Array[0] atIndex:self.vod_Array.count+1];
     [array addObject:self.vod_Array[0]];
  
@@ -478,7 +487,7 @@
         entry = nil;
     }
     
-    self.imageScrollingView.contentSize = CGSizeMake(self.imageScrollingView.frame.size.width * (self.vod_Array.count+1), self.imageScrollingView.frame.size.height);
+    self.imageScrollingView.contentSize = CGSizeMake(self.imageScrollingView.frame.size.width * (self.vod_Array.count+2), self.imageScrollingView.frame.size.height);
     [self.imageScrollingView setContentOffset:CGPointMake(1*self.imageScrollingView .frame.size.width, 0) animated:NO];
     Entries *entry = scrollViewData[1];
     self.titleLable.text = entry.title;
@@ -497,7 +506,7 @@
     scrollViewData = nil;
     entry = nil;
     
-[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(scrollingTimer) userInfo:nil repeats:YES];
+//[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(scrollingTimer) userInfo:nil repeats:YES];
     [self performSelectorOnMainThread:@selector(setupLiveUpcomingTableView) withObject:nil waitUntilDone:YES];// setupLiveUpcomingTableView
     [self.loadingActivityIndicator stopAnimating];
     
@@ -519,9 +528,12 @@
     UIButton *buttonTapped = sender;
     DLog(@"Tagged index : %li", (long)buttonTapped.tag);
     Entries *tappedEntry = nil;
-    if (buttonTapped.tag==self.vod_Array.count) {
-        tappedEntry = self.vod_Array[0];
-    }else{
+    if (buttonTapped.tag==self.vod_Array.count+1) {
+        tappedEntry = self.vod_Array.firstObject;
+    }else if(buttonTapped.tag==0){
+        tappedEntry = self.vod_Array.lastObject;
+    }
+    else{
     
    tappedEntry = self.vod_Array[buttonTapped.tag-1];
     }
@@ -639,22 +651,33 @@
     
     int currentPage = (int)(contentOffset/self.imageScrollingView.frame.size.width);
     
-    if (currentPage==self.vod_Array.count-1) {
+//    if (self.vod_Array.count<=5) {
+//        
+//        
+//        
+//        
+//        
+//        
+//        
+//        return;
+//    }
+    
+    if (currentPage==self.vod_Array.count) {
 
-        Entries *entry = self.vod_Array[self.vod_Array.count-2];
+        Entries *entry = self.vod_Array.lastObject;//self.vod_Array[self.vod_Array.count-2];
         if (self.mainCategoryLable!=nil) {
             self.mainCategoryLable.text = entry.categoriesRelationship.mainCategory;
 //            self.mainCategoryLable.font =[UIFont fontWithName:@"UScoreRGD" size:14];
         }
         self.titleLable.text = entry.title;
-        self.pagingController.currentPage = self.vod_Array.count-1;
+        self.pagingController.currentPage = self.vod_Array.count;
         return;
     }
     
-    if (currentPage==self.vod_Array.count) {
+    if (currentPage==self.vod_Array.count+1) {
                 [self.imageScrollingView setContentOffset:CGPointMake(1*self.imageScrollingView.frame.size.width, 0) animated:NO];
 
-        Entries *entry = self.vod_Array[0];
+        Entries *entry = self.vod_Array.firstObject;//self.vod_Array[0];
         self.titleLable.text = entry.title;
         if (self.mainCategoryLable!=nil) {
             self.mainCategoryLable.text = entry.categoriesRelationship.mainCategory;
@@ -665,8 +688,8 @@
     }
     
     if (currentPage==0) {
-        [self.imageScrollingView setContentOffset:CGPointMake((self.vod_Array.count-1)*self.imageScrollingView.frame.size.width, 0) animated:NO];
-        Entries *entry = self.vod_Array[self.vod_Array.count-2];
+        [self.imageScrollingView setContentOffset:CGPointMake((self.vod_Array.count)*self.imageScrollingView.frame.size.width, 0) animated:NO];
+        Entries *entry = self.vod_Array.lastObject;//self.vod_Array[self.vod_Array.count-2];
         self.titleLable.text = entry.title;
         if (self.mainCategoryLable!=nil) {
             self.mainCategoryLable.text = entry.categoriesRelationship.mainCategory;
@@ -677,9 +700,9 @@
 
     }
   
-    if (currentPage==self.vod_Array.count-1) {
-        currentPage = 0;
-    }
+//    if (currentPage==self.vod_Array.count-1) {
+//        currentPage = 0;
+//    }
     Entries *entry = self.vod_Array[currentPage-1];
     self.titleLable.text = entry.title;
     if (self.mainCategoryLable!=nil) {
@@ -693,54 +716,14 @@
 #pragma mark - Table View Datasource & Delegate Methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-//    return self.live_Array.count;
+
     id  sectionInfo =
     [[_fetchedResultsController sections] objectAtIndex:section];
+    NSInteger rows = [sectionInfo numberOfObjects]+1;
+    self.rows = rows;
     return [sectionInfo numberOfObjects]+1;
 }
-//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-//    id  sectionInfo =
-//    [_fetchedResultsController sections] ;
-//    DLog(@"Total Sections : %i",[sectionInfo count]);
-//    return [sectionInfo count];
-//}
-//
-//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-//{
-//    id <NSFetchedResultsSectionInfo> theSection = [[self.fetchedResultsController sections] objectAtIndex:section];
-//    
-//    
-//    
-//    CGSize stringsize1 = [[theSection name] sizeWithAttributes:
-//                          @{NSFontAttributeName:
-//                                [UIFont fontWithName:@"UScoreRGD" size:18]}];
-//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(5, 15, tableView.frame.size.width, stringsize1.height)];
-//    [label setFont:[UIFont fontWithName:@"UScoreRGD" size:18]];
-//    NSString *string = [[theSection name] isEqualToString:@"0"]?@"Live":@"Upcoming";
-//    [label setText:string];
-//    label.lineBreakMode = NSLineBreakByWordWrapping;
-//    label.numberOfLines = 0;
-//    label.textColor = [UIColor whiteColor];
-//    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, label.frame.size.height+30)];
-//    [view addSubview:label];
-//    [view setBackgroundColor:[UIColor colorWithRed:0/255. green:44/255. blue:75/255. alpha:1.0]]; //your background color...
-//    return view;
-//}
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-//{
-//    id <NSFetchedResultsSectionInfo> theSection = [[self.fetchedResultsController sections] objectAtIndex:section];
-//    
-//    
-//    
-//    CGSize stringsize1 = [[theSection name] sizeWithAttributes:
-//                          @{NSFontAttributeName:
-//                                [UIFont fontWithName:@"UScoreRGD" size:18]}];
-//    //    DLog(@"String Size : %f",stringsize1.height+30);
-//    //    return 50;
-//    return round(stringsize1.height+30);
-//}
 
 - (void)configureCell:(FICLiveUpcomingTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     Entries *liveEntries = [_fetchedResultsController objectAtIndexPath:indexPath];
@@ -748,7 +731,7 @@
     cell.titleLabel.text = liveEntries.title ;
     cell.titleLabel.font = [UIFont fontWithName:@"UScoreRGD" size:18];
     
-    if (liveEntries.livevodupcoming!=[NSNumber numberWithInt:LIVE]) {
+    if ([liveEntries.livevodupcoming intValue]!=LIVE) {
         cell.liveImageView.hidden = YES;
         cell.dateLabel.hidden = NO;
         cell.dateLabel.text = [FICCommonUtilities formatDate:@"EEEE dd hh:mm a" timeZone:@"SGT" date:liveEntries.availableDate];//liveEntries.availableDate;
@@ -756,8 +739,8 @@
     }else{
         cell.dateLabel.hidden = YES;
         cell.liveImageView.hidden = NO;
-
     }
+   
    
     liveEntries = nil;
 }
@@ -769,7 +752,7 @@
 //    id  sectionInfo =
 //    [[_fetchedResultsController sections] objectAtIndex:indexPath.section];
     
-    if (indexPath.row==3) {
+    if ((self.rows>3 && indexPath.row==3)||(self.rows<=3 && indexPath.row==self.rows-1)) {
         
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ADD"];
         if (cell==nil) {
@@ -789,8 +772,11 @@
             
             
             adPlaceHolderImageView = nil;
+            UIView *adView =[self createBannerView:kGADAdSizeBanner adUnitID:[self getAddUnitId:@"Sport" adSize:@"320x50"] rootViewController:self];
+            adView.frame = CGRectMake(0, 0, cell.contentView.frame.size.width, cell.contentView.frame.size.height);
+           
+            [cell.contentView addSubview:adView];
             
-            [cell.contentView addSubview:[self createBannerView:kGADAdSizeBanner adUnitID:[self getAddUnitId:@"Sport" adSize:@"320x50"] rootViewController:self]];
             cell.backgroundColor = [UIColor blackColor];
             
             isAdLoaded = YES;
@@ -823,7 +809,7 @@
     
   
     
-    if (indexPath.row>3) {
+    if (indexPath.row>=3 && self.rows>3) {
         NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:indexPath.row-1 inSection:indexPath.section];
         [self configureCell:cell atIndexPath:newIndexPath];
     }else{
@@ -878,7 +864,7 @@
     NSDate *currentDate = [NSDate date];
     NSTimeInterval secs = [currentDate timeIntervalSinceDate:self.clickedEntry.availableDate];
     
-    if (secs>=0&&clickedEntry.livevodupcoming!=[NSNumber numberWithInt:LIVE]) {
+    if (secs>=0&&[clickedEntry.livevodupcoming intValue]!=LIVE) {
         
         [self checkLoginAndPlayVideo];
         currentDate = nil;
@@ -886,7 +872,7 @@
     }
 
     
-    if ([clickedEntry.livevodupcoming isEqual:[NSNumber numberWithInt:LIVE]]) {
+    if ([clickedEntry.livevodupcoming intValue]==LIVE) {
         
         NSArray *contentArray = [clickedEntry.contentRelationship allObjects];
         

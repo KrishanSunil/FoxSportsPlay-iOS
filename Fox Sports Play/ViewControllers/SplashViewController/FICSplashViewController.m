@@ -98,7 +98,11 @@
   
              countryArray = nil;
              
+//             [[NSUserDefaults standardUserDefaults] setObject:@"us" forKey:@"CountryCode"];
+//             [[NSUserDefaults standardUserDefaults] synchronize];
+             
              [[NSUserDefaults standardUserDefaults] setObject:[[[countryDictionary objectForKey:@"countryCode"] lowercaseString] isEqualToString:@"us"]?@"sg":[[countryDictionary objectForKey:@"countryCode"] lowercaseString] forKey:@"CountryCode"];
+             [[NSUserDefaults standardUserDefaults] synchronize];
              
              FICCountryDataAccess *countryDataAccess  = [[FICCountryDataAccess alloc]init];
              NSArray *existingCountryArray =  [countryDataAccess retriveCountryData:[[countryDictionary objectForKey:@"countryCode"] lowercaseString]];

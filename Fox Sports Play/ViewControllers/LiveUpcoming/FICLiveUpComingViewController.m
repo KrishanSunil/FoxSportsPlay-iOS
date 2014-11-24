@@ -220,7 +220,7 @@
 - (void)configureCell:(FICLiveTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     Entries *entry = [_fetchedResultsController objectAtIndexPath:indexPath];
   
-    if (entry.livevodupcoming!=[NSNumber numberWithInt:LIVE]) {
+    if ([entry.livevodupcoming intValue]!=LIVE) {
         cell.liveImageView.hidden = YES;
         cell.dateLabel.text = [FICCommonUtilities formatDate:@"EEEE dd hh:mm a" timeZone:@"UTC" date:entry.availableDate];
         cell.dateLabel.font = [UIFont fontWithName:@"UScoreRGD" size:13];
@@ -275,7 +275,7 @@
    
     Entries *clickedEntry = [_fetchedResultsController objectAtIndexPath:indexPath];
     
-    if (clickedEntry.livevodupcoming!=[NSNumber numberWithInt:LIVE]) {
+    if ([clickedEntry.livevodupcoming intValue]!=LIVE) {
         
         NSString *nibName = [FICCommonUtilities getNibName:@"Upcoming"];
         FICUpComingViewController *upComing = [[FICUpComingViewController alloc]initWithNibName:nibName bundle:nil];
@@ -331,7 +331,7 @@
     Entries *entry = [_fetchedResultsController objectAtIndexPath:indexPath];
     
     DLog(@"Entry : %@", entry);
-    if (entry.livevodupcoming!=[NSNumber numberWithInt:LIVE]) {
+    if ([entry.livevodupcoming intValue]!=LIVE) {
         cell.liveImageView.hidden = YES;
         cell.dateLabel.hidden = NO;
         cell.dateLabel.text = [FICCommonUtilities formatDate:@"EEEE dd hh:mm a" timeZone:@"UTC" date:entry.availableDate];
@@ -445,7 +445,7 @@
     NSDate *currentDate = [NSDate date];
     NSTimeInterval secs = [currentDate timeIntervalSinceDate:self.clickedEntry.availableDate];
     
-    if (secs>=0&&clickedEntry.livevodupcoming!=[NSNumber numberWithInt:LIVE]) {
+    if (secs>=0&&[clickedEntry.livevodupcoming intValue]!=LIVE) {
         
         [self checkLoginAndPlayVideo];
         currentDate = nil;
@@ -454,7 +454,7 @@
     
     
     //
-    if (clickedEntry.livevodupcoming!=[NSNumber numberWithInt:LIVE]) {
+    if ([clickedEntry.livevodupcoming intValue]!=LIVE) {
         
         NSString *nibName = [FICCommonUtilities getNibName:@"Upcoming"];
         FICUpComingViewController *upComing = [[FICUpComingViewController alloc]initWithNibName:nibName bundle:nil];
@@ -568,7 +568,7 @@
 
 -(void)loginSuccess{
     
-    if (self.clickedEntry.livevodupcoming!=[NSNumber numberWithInt:LIVE]) {
+    if ([self.clickedEntry.livevodupcoming intValue]!=LIVE) {
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"isLoggedOut"];
          [[NSUserDefaults standardUserDefaults] synchronize];
         [self playVideo:self.clickedEntry];

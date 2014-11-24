@@ -117,10 +117,10 @@
             fianlUrl =  [FICMpx getHighlightsFeed:url minRange:1 maxRange:maxRange countryCode:[[NSUserDefaults standardUserDefaults] objectForKey:@"CountryCode"]];
             break;
         case LIVE:
-            fianlUrl =  [FICMpx getLiveFeed:url minRange:1 maxRange:13 availableDate:[NetworkClock sharedInstance].networkTime countryCode:[[NSUserDefaults standardUserDefaults] objectForKey:@"CountryCode"]];
+            fianlUrl =  [FICMpx getLiveFeed:url minRange:1 maxRange:13 availableDate:[NetworkClock sharedNetworkClock].networkTime countryCode:[[NSUserDefaults standardUserDefaults] objectForKey:@"CountryCode"]];
             break;
         case UPCOMING:
-            fianlUrl = [FICMpx getUpComingFeed:url minRange:1 maxRange:13 fromDate:[NetworkClock sharedInstance].networkTime toDate:[commonUtilities futureDate:10 dateFrom:[NetworkClock sharedInstance].networkTime] countryCode:[[NSUserDefaults standardUserDefaults] objectForKey:@"CountryCode"]];
+            fianlUrl = [FICMpx getUpComingFeed:url minRange:1 maxRange:13 fromDate:[NetworkClock sharedNetworkClock].networkTime toDate:[commonUtilities futureDate:10 dateFrom:[NetworkClock sharedNetworkClock].networkTime] countryCode:[[NSUserDefaults standardUserDefaults] objectForKey:@"CountryCode"]];
             break;
         default:
             break;

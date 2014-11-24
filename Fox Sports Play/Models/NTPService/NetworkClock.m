@@ -5,7 +5,23 @@
   ║  Copyright 2010 Ramsay Consulting. All rights reserved.                                          ║
   ╚══════════════════════════════════════════════════════════════════════════════════════════════════╝*/
 
+#import <netinet/in.h>
 #import "NetworkClock.h"
+#import <arpa/inet.h>
+
+@interface NetworkClock (PrivateMethods)
+
+- (void) offsetAverage;
+
+- (NSString *) hostAddress:(struct sockaddr_in *) sockAddr;
+
+- (void) associationTrue:(NSNotification *) notification;
+- (void) associationFake:(NSNotification *) notification;
+
+- (void) applicationBack:(NSNotification *) notification;
+- (void) applicationFore:(NSNotification *) notification;
+
+@end
 
 #pragma mark -
 #pragma mark                        N E T W O R K • C L O C K
@@ -19,26 +35,31 @@
 
 @implementation NetworkClock
 
++ (id)sharedNetworkClock {
+    static id sharedNetworkClockInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedNetworkClockInstance = [[self alloc] init];
+    });
+    return sharedNetworkClockInstance;
+}
+
 - (id) init {
-    if ((self = [super init]) == nil) return nil;
+    if (!(self = [super init])) return nil;
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ Prepare a sort-descriptor to sort associations based on their dispersion, and then create an     │
   │ array of empty associations to use ...                                                           │
   └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
     dispersionSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"dispersion" ascending:YES];
-    sortDescriptors = @[dispersionSortDescriptor];
-    timeAssociations = [NSMutableArray arrayWithCapacity:48];
+    sortDescriptors = [[NSArray arrayWithObject:dispersionSortDescriptor] retain];
+    timeAssociations = [[NSMutableArray arrayWithCapacity:48] retain];
+
+    associationDelegateQueue = dispatch_queue_create("org.ios-ntp.delegates", 0);
+    
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ .. and fill that array with the time hosts obtained from "ntp.hosts" ..                          │
   └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-#ifdef THREADING_DOESNT_WORK_SO_DONT_TRY_IT
-    [[NSOperationQueue alloc] init] addOperation:[[NSInvocationOperation alloc]
-                                                  initWithTarget:self
-                                                        selector:@selector(createAssociations)
-                                                          object:nil];
-#else
-    [self createAssociations];                  // this delays here, would be good to thread this ..
-#endif
+    [self createAssociations];                  
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ prepare to catch our application entering and leaving the background ..                          │
   └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
@@ -50,6 +71,13 @@
 												 name:UIApplicationWillEnterForegroundNotification
 											   object:nil];
     return self;
+}
+
+- (void)dealloc {
+    [self finishAssociations];
+    dispatch_release(associationDelegateQueue);
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [super dealloc];
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -76,12 +104,12 @@
         timeIntervalSinceDeviceTime /= usefulCount;
     }
 //###ADDITION?
-	if (usefulCount ==8)
-	{
-		//stop it for now
-		//
-//		[self finishAssociations];
-	}
+  if (usefulCount ==8)
+  {
+    //stop it for now
+    //
+//    [self finishAssociations];
+  }
 //###
 }
 
@@ -111,73 +139,32 @@
 
     NSArray *   ntpDomains = [fileData componentsSeparatedByCharactersInSet:
                                                                 [NSCharacterSet newlineCharacterSet]];
+    [fileData release];
 
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │  for each NTP service domain name in the 'ntp.hosts' file : "0.pool.ntp.org" etc ...             │
   └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-    NSMutableSet *          hostAddresses = [NSMutableSet setWithCapacity:48];
-
     for (NSString * ntpDomainName in ntpDomains) {
         if ([ntpDomainName length] == 0 ||
             [ntpDomainName characterAtIndex:0] == ' ' || [ntpDomainName characterAtIndex:0] == '#') {
             continue;
         }
-        CFStreamError       nameError;
-        Boolean             nameFound;
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │  ... resolve the IP address of the named host : "0.pool.ntp.org" --> [123.45.67.89], ...         │
+  │  ... start an 'association' (network clock object) for each address.                             │
   └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-        CFHostRef ntpHostName = CFHostCreateWithName (kCFAllocatorDefault, (__bridge CFStringRef)ntpDomainName);
-        if (ntpHostName == nil) {
-            LogInProduction(@"CFHostCreateWithName ntpHost <nil>");
-            continue;                                           // couldn't create 'host object' ...
-        }
-
-        if (!CFHostStartInfoResolution (ntpHostName, kCFHostAddresses, &nameError)) {
-            LogInProduction(@"CFHostStartInfoResolution error %li", nameError.error);
-            CFRelease(ntpHostName);
-            continue;                                           // couldn't start resolution ...
-        }
-
-        CFArrayRef ntpHostAddrs = CFHostGetAddressing (ntpHostName, &nameFound);
-
-        if (!nameFound) {
-            LogInProduction(@"CFHostGetAddressing: NOT resolved");
-            CFRelease(ntpHostName);
-            continue;                                           // resolution failed ...
-        }
-
-        if (ntpHostAddrs == nil) {
-            LogInProduction(@"CFHostGetAddressing: no addresses resolved");
-            CFRelease(ntpHostName);
-            continue;                                           // NO addresses were resolved ...
-        }
-/*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │  for each (sockaddr structure wrapped by a CFDataRef/NSData *) associated with the hostname,     │
-  │  drop the IP address string into a Set to remove duplicates.                                     │
-  └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-        for (NSData * ntpHost in (__bridge NSArray *)ntpHostAddrs) {
-            [hostAddresses addObject:[self hostAddress:(struct sockaddr_in *)[ntpHost bytes]]];
-        }
-        CFRelease(ntpHostName);
-    }
-/*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │  get ready to catch any notifications from associations ...                                      │
-  └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(associationTrue:)
-                                                 name:@"assoc-good" object:nil];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(associationFake:)
-                                                 name:@"assoc-fail" object:nil];
-/*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │  ... now start an 'association' (network clock object) for each address.                         │
-  └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-    for (NSString * server in hostAddresses) {
-        NetAssociation *    timeAssociation = [[NetAssociation alloc] init:server];
-
+        NetAssociation* timeAssociation = [[NetAssociation alloc] initWithServerName:ntpDomainName queue:associationDelegateQueue];
         [timeAssociations addObject:timeAssociation];
-        [timeAssociation enable];                               // starts are randomized internally
+        [timeAssociation release];
     }
+
+    // Enable associations.
+    [self enableAssociations];
+}
+
+- (void) enableAssociations {
+    [timeAssociations makeObjectsPerformSelector:@selector(enable)];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(associationTrue:) name:@"assoc-good" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(associationFake:) name:@"assoc-fail" object:nil];
 }
 
 - (void) reportAssociations {
@@ -188,26 +175,25 @@
   ┃ Stop all the individual ntp clients ..                                                           ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 - (void) finishAssociations {
-    for (NetAssociation * timeAssociation in timeAssociations) {
-        [timeAssociation finish];
-    }
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [timeAssociations makeObjectsPerformSelector:@selector(finish)];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"assoc-good" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"assoc-fail" object:nil];
 }
 
-#import <arpa/inet.h>
+
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃ ... obtain IP address, "xx.xx.xx.xx", from the sockaddr structure ...                            ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 - (NSString *) hostAddress:(struct sockaddr_in *) sockAddr {
-	char addrBuf[INET_ADDRSTRLEN];
+  char addrBuf[INET_ADDRSTRLEN];
 
-	if (inet_ntop(AF_INET, &sockAddr->sin_addr, addrBuf, sizeof(addrBuf)) == NULL) {
-		[NSException raise:NSInternalInconsistencyException
+  if (inet_ntop(AF_INET, &sockAddr->sin_addr, addrBuf, sizeof(addrBuf)) == NULL) {
+    [NSException raise:NSInternalInconsistencyException
                     format:@"Cannot convert address to string."];
-	}
+  }
 
-	return @(addrBuf);
+  return [NSString stringWithCString:addrBuf encoding:NSASCIIStringEncoding];
 }
 
 #pragma mark                        N o t i f i c a t i o n • T r a p s
@@ -240,7 +226,7 @@
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 - (void) applicationBack:(NSNotification *) notification {
     LogInProduction(@"*** application -> Background");
-//  [self finishAssociations];
+//    [self finishAssociations];
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -248,21 +234,7 @@
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 - (void) applicationFore:(NSNotification *) notification {
     LogInProduction(@"*** application -> Foreground");
-//  [self enableAssociations];
-}
-
-#pragma mark -
-#pragma mark                        S I N G L E T O N • B E H A V I O U R
-
-+ (NetworkClock *) sharedInstance {
-    
-    static NetworkClock *sharedInstance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedInstance = [[self alloc] init];
-    });
-    return sharedInstance;
-
+//    [self enableAssociations];
 }
 
 @end

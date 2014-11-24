@@ -305,9 +305,20 @@
         
         
         BOOL isSaved = false;
+//        
+//        int i=0;
         
         for (NSMutableDictionary *entries in entriesArray) {
-            isSaved =  [entriesDataAccess saveDataToEntries:entries liveVodUpcoming:liveVodUpcoming context:appDelegate.persistentStack.managedObjectContext];
+           
+            
+            
+             isSaved =  [entriesDataAccess saveDataToEntries:entries liveVodUpcoming:liveVodUpcoming context:appDelegate.persistentStack.managedObjectContext];
+//            i++;
+//            if (i==4) {
+//                break;
+//            }
+
+            
         }
         
         if (!isSaved && entriesArray.count>0) {
